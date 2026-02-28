@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.body_login {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/closet.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.login-container {
+    padding-top: 100px; 
+    padding-bottom: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background-color: rgba(239, 233, 198, 0.95);
+    padding: 40px 50px;
+    border-radius: 40px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+    .login-card h2 {
+        color: #2f2f2f;
+        margin-bottom: 25px;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #4A4A4A;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 25px;
+        border: 2px solid #B0312F;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+        .form-group input:focus {
+            border-color: #635F4F;
+        }
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #B0312F;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+    .btn-login:hover {
+        background-color: #635F4F;
+        transform: scale(1.05);
+    }
+
+.register-link {
+    margin-top: 15px;
+    color: #4A4A4A;
+}
+
+    .register-link a {
+        color: #B0312F;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }

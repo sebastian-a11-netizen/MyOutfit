@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,12 +14,10 @@ body {
 }
 
 
-
 header {
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 0;
+    position: absolute;
     width: 100%;
     z-index: 10;
     background-color: rgba(231, 219, 198, 0.9);
@@ -91,73 +92,21 @@ header {
     max-width: 950px;  
 }
 
-.outfits-section {
-    padding: 140px 20px 80px; /* más espacio arriba por el header fixed */
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+.register-link {
+    margin-top: 15px;
+    color: #4A4A4A;
 }
 
-.outfit-card {
-    position: relative;
-    background-color: #fff;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 350px; /* 👈 ahora NO ocupa todo el ancho */
-}
+    .register-link a {
+        color: #B0312F;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-.outfit-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-}
+        .register-link a:hover {
+            text-decoration: underline;
+        }
 
-.outfit-card img {
-    width: 100%;
-    height: 300px; /* más alto para que luzca fashion */
-    object-fit: cover;
-    display: block;
-}
-
-.outfit-details {
-    padding: 20px;
-    text-align: center;
-}
-
-.outfit-details h3 {
-    font-size: 1.4rem;
-    color: #2f2f2f;
-}
-
-.favorite-icon {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-
-    background: rgba(255, 255, 255, 0.9);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 20px;
-    cursor: pointer;
-    transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.favorite-icon:hover {
-    transform: scale(1.1);
-    background: white;
-}
-
-.btn-outfit:hover {
-    background-color: #8c583c;
-}
 
 footer {
     position: relative;

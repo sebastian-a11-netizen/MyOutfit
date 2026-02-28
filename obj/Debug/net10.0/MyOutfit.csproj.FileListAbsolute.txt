@@ -27,5 +27,10 @@
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/MyOutfit.pdb
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/MyOutfit.genruntimeconfig.cache
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/ref/MyOutfit.dll
-/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/jto9qo82is-{0}-qac9r78sgc-qac9r78sgc.gz
-/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/jcgdrt45ic-{0}-azsmd4mclc-azsmd4mclc.gz
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/MyOutfit.sourcelink.json
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/g90ifzuqog-{0}-08kvsbd87k-08kvsbd87k.gz
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/fvwd4foxet-{0}-xuaegme8dn-xuaegme8dn.gz
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/4atdc8amvc-{0}-fsm83fmg1s-fsm83fmg1s.gz
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/jto9qo82is-{0}-mtnctupl2i-mtnctupl2i.gz
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/5x1cnp99m8-{0}-z7gmftfie1-z7gmftfie1.gz
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/jcgdrt45ic-{0}-7zo6mqib2f-7zo6mqib2f.gz

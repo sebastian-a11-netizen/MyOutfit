@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.body_registro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/closet.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+.registro-container {
+    padding-top: 100px; 
+    padding-bottom: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjeta */
+.registro-card {
+    background-color: rgba(239, 233, 198, 0.95);
+    padding: 40px 50px;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+    .registro-card h2 {
+        text-align: center;
+        color: #2f2f2f;
+        margin-bottom: 25px;
+        font-size: 1.8rem;
+    }
+
+/* Campos */
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: block;
+        color: #333;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 25px;
+        border: 2px solid #b33a3a;
+        outline: none;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #912d2d;
+        }
+
+/* Botón */
+.btn-registrar {
+    background-color: #b33a3a;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-registrar:hover {
+        background-color: #912d2d;
+        transform: translateY(-2px);
+    }
+
+/* Enlace inferior */
+.registro-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+    .registro-link a {
+        color: #b33a3a;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+        .registro-link a:hover {
+            text-decoration: underline;
+        }
