@@ -81,8 +81,8 @@ body {
 }
 
     .btn-login:hover {
-        background-color: #635F4F;
-        transform: scale(1.05);
+        background-color: #8E2624;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
 .register-link {

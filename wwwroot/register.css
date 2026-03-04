@@ -72,7 +72,7 @@ body {
 
 /* Botón */
 .btn-registrar {
-    background-color: #b33a3a;
+    background-color: #B0312F;
     color: white;
     border: none;
     width: 100%;
@@ -86,8 +86,8 @@ body {
 }
 
     .btn-registrar:hover {
-        background-color: #912d2d;
-        transform: translateY(-2px);
+        background-color: #8E2624;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
 /* Enlace inferior */

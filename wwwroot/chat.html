@@ -2,10 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Chat</title>
+  <title>Armario</title>
   <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="chat.css"> 
 </head>
-<body class="body_habitaciones">
+<body class="body_chat">
     <header>
         <div class="logo">MyOutfit</div>
          <nav class="main-nav">
@@ -15,15 +16,35 @@
             <a href="#">Contactanos</a>
         </nav>
         <div>
-            <p>Iniciar Sesión</p>
+            <a href="login.html"><img src="img/login.png" alt="Iniciar Sesión" height="33" /></a>
         </div>
     </header>
 
-  <main class="outfits-section">
+ <main class="chat-section">
+
+  <div class="chat-container">
+
+    <div class="chat-messages">
+
+      <div class="message bot">
+        <img src="img/outfit.jpg" alt="Outfit sugerido">
+      </div>
+
+      <div class="message user">
+        Ese estilo me gusta, ¿qué prendas necesito para armarlo?
+      </div>
+
+    </div>
+
+    <div class="chat-input">
+      <input type="text" placeholder="Escribe tu mensaje...">
+      <button class="btn btn-primary">Enviar</button>
+    </div>
+
+  </div>
+
 </main>
 
-
-</main>
 
    <footer>
         <p>@QueMePongoOficial</p>

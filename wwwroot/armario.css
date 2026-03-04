@@ -6,23 +6,31 @@ body {
     line-height: 1.6;
 }
 
+button {
+    font-family: inherit;
+}
 
 .outfits-section {
-    padding: 140px 20px 80px; /* más espacio arriba por el header fixed */
+    padding: 95px 20px 35px; 
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.add-btn {
+    grid-column: 1 / -1;
 }
 
 .outfit-card {
     position: relative;
     background-color: #fff;
-    border-radius: 25px;
+    border-radius: 35px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 350px; /* 👈 ahora NO ocupa todo el ancho */
+    width: 350px; 
 }
 
 .outfit-card:hover {
@@ -32,7 +40,7 @@ body {
 
 .outfit-card img {
     width: 100%;
-    height: 300px; /* más alto para que luzca fashion */
+    height: 300px; 
     object-fit: cover;
     display: block;
 }

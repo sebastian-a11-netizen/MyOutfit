@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: inherit;
+}
+
+.btn {
+    text-decoration: none;
 }
 
 body {
@@ -14,6 +19,7 @@ body {
 }
 
 
+/* Header */
 header {
     display: flex;
     align-items: center;
@@ -32,6 +38,7 @@ header {
     color: #2f2f2f;
 }
 
+/* Navigation */
 .main-nav {
     display: flex;
     gap: 30px;
@@ -92,22 +99,52 @@ header {
     max-width: 950px;  
 }
 
-.register-link {
-    margin-top: 15px;
-    color: #4A4A4A;
+
+/* Botones */
+.btn {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-    .register-link a {
-        color: #B0312F;
-        text-decoration: none;
-        font-weight: bold;
-    }
+.btn-primary {
+    background-color: #A96D4B;
+    color: white;
+}
 
-        .register-link a:hover {
-            text-decoration: underline;
-        }
+.btn-primary:hover {
+    background-color: #8c583c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.btn-secondary {
+    background-color: #B0312F;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #8E2624;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
 
 
+/* Footer */
 footer {
     position: relative;
     padding: 10px;
