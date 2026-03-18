@@ -25,47 +25,31 @@
         <div class="registro-card">
             <h2>Crear Cuenta</h2>
 
-            <form action="/api/cliente" method="post" id="registroForm">
+            <form action="/api/users/register" method="post">
 
-                <div class="form-group">
-                    <label for="id">Documento de identidad</label>
-                    <input type="text" id="id" name="ID_Cliente" required placeholder="Ej: 1032456789">
-                </div>
-
-                <div class="form-group">
-                    <label for="tipo_doc">Tipo de documento</label>
-                    <select id="tipo_doc" name="Tipo_docuemento" required>
-                        <option value="">Seleccionar...</option>
-                        <option value="CC">Cédula de ciudadanía</option>
-                        <option value="CE">Cédula de extranjería</option>
-                        <option value="TI">Tarjeta de identidad</option>
-                        <option value="PAS">Pasaporte</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="Nombre" required placeholder="Ej: Ana">
-                </div>
-
-                <div class="form-group">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="Apellido" required placeholder="Ej: Pérez">
-                </div>
-
-                <div class="form-group">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="Telefono" placeholder="3001234567" pattern="[0-9]{10}">
-                </div>
-
-                <div class="form-group">
+                     <div class="form-group">
                     <label for="correo">Correo electrónico</label>
-                    <input type="email" id="correo" name="Correo" required placeholder="ejemplo@correo.com">
+                    <input type="email" id="correo" name="Email" required placeholder="ejemplo@correo.com">
                 </div>
 
                 <div class="form-group">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="Password" required minlength="6" placeholder="********">
+                    <input type="password" name="Password" required minlength="6" placeholder="********">
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="Username" required placeholder="Ej: Ana">
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number" name="Age" required placeholder="Ej: 25">
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Género</label>
+                    <input type="text" name="Gender" required placeholder="Ej: Masculino">
                 </div>
 
                 <button type="submit" class="btn-registrar">Crear cuenta</button>
