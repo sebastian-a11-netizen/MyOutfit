@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 <body class="body_login">
 
     <header>
         <div class="logo">MyOutfit</div>
         <nav class="main-nav">
-            <a href="/index.html" class="active">Inicio</a>
-            <a href="chat.html">Chat</a>
-            <a href="armario.html">Armario</a>
-            <a href="#">Contactanos</a>
+            <a href="/html/index.html" class="active">Inicio</a>
+            <a href="/html/chat.html">Chat</a>
+            <a href="/html/armario.html">Armario</a>
         </nav>
         <div>
-            <a href="login.html"><img src="img/login.png" alt="Iniciar Sesión" height="33" /></a>
+            <a href="/html/login.html"><img src="/img/login.png" alt="Iniciar Sesión" height="33" /></a>
         </div>
     </header>
 
     <main class="login-container">
         <div class="login-card">
             <h2>Iniciar Sesión</h2>
-            <form action="/api/users/login" method="post">
+            <form action="/api/user/login" method="post">
                 <div class="form-group">
                     <label for="email">Correo electrónico</label>
                     <input type="email" name="email" required placeholder="ejemplo@correo.com">

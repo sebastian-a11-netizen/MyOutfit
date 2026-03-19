@@ -1,18 +1,18 @@
 using System.Data;
 using Dapper;
 using Microsoft.Data.Sqlite;
-using Models;
+using Domain;
 using SqlKata.Compilers;
 using SqlKata;
 
-namespace Services
+namespace Infraestructure
 {
-    public class UserService
+    public class UserRepository: IUserRepository
     {
         private readonly IDbConnection dbConnection;
         private readonly Compiler compiler;
 
-        public UserService(string connection)
+        public UserRepository(string connection)
         {
             dbConnection = new SqliteConnection(connection);
             compiler = new SqliteCompiler();

@@ -1,12 +1,12 @@
-using Services;
+using Infraestructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var path = Path.Combine(Directory.GetCurrentDirectory(), "MyOutfit.db");
 
-builder.Services.AddScoped(_ => new UserService("Data Source=data/MyOutfit.db"));
+builder.Services.AddScoped<IUserRepository>(provider => new UserRepository($"Data Source={path}"));
 
 var app = builder.Build();
 

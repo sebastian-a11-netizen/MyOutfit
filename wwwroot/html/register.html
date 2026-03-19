@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/register.css">
 </head>
 <body class="body_registro">
 
     <header>
         <div class="logo">MyOutfit</div>
          <nav class="main-nav">
-            <a href="/index.html" class="active">Inicio</a>
-            <a href="chat.html">Chat</a>
-            <a href="armario.html">Armario</a>
-            <a href="#">Contactanos</a>
+            <a href="/html/index.html" class="active">Inicio</a>
+            <a href="/html/chat.html">Chat</a>
+            <a href="/html/armario.html">Armario</a>
         </nav>
         <div>
-            <a href="login.html"><img src="img/login.png" alt="Iniciar Sesión" height="33" /></a>
+            <a href="/html/login.html"><img src="/img/login.png" alt="Iniciar Sesión" height="33" /></a>
         </div>
     </header>
 
@@ -25,7 +24,7 @@
         <div class="registro-card">
             <h2>Crear Cuenta</h2>
 
-            <form action="/api/users/register" method="post">
+            <form action="/api/user/register" method="post">
 
                      <div class="form-group">
                     <label for="correo">Correo electrónico</label>

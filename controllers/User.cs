@@ -1,31 +1,30 @@
 using Microsoft.AspNetCore.Mvc;
-using Models;
-using Services;
+using Domain;
 
 namespace Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UsersController : ControllerBase
+    public class UserController : ControllerBase
     {
-        private readonly UserService userService;
+        private readonly IUserRepository userRepository;
 
-        public UsersController(UserService userService)
+        public UserController(IUserRepository userRepository)
         {
-            this.userService = userService;
+            this.userRepository = userRepository;
         }
 
         [HttpPost("register")]
         public async Task<IActionResult> CrearUsuario([FromForm] User user)
         {
-            await userService.CrearUsuario(user);
+            await userRepository.CrearUsuario(user);
             return Redirect("/index.html");
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromForm] string email, [FromForm] string password)
         {
-            var user = await userService.ObtenerUsuarioPorEmail(email);
+            var user = await userRepository.ObtenerUsuarioPorEmail(email);
 
             if (user == null || user.Password != password)
                 return Unauthorized(new { message = "Credenciales inválidas" });
