@@ -7,7 +7,7 @@ body {
 }
 
 .body_registro {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/closet.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/closet.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -61,8 +61,7 @@ body {
         border-radius: 25px;
         border: 2px solid #b33a3a;
         outline: none;
-        font-size: 1rem;
-        transition: all 0.3s ease;
+        transition: border-color 0.3s ease;
     }
 
         .form-group input:focus,

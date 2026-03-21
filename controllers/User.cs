@@ -15,21 +15,21 @@ namespace Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> CrearUsuario([FromForm] User user)
+        public async Task<IActionResult> Registrarse([FromForm] User user)
         {
             await userRepository.CrearUsuario(user);
-            return Redirect("/index.html");
+            return Ok(new { success = true, message = "Usuario creado exitosamente" });
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromForm] string email, [FromForm] string password)
+        public async Task<IActionResult> IniciarSesion([FromForm] string email, [FromForm] string password)
         {
             var user = await userRepository.ObtenerUsuarioPorEmail(email);
 
             if (user == null || user.Password != password)
-                return Unauthorized(new { message = "Credenciales inválidas" });
+                return Unauthorized(new { success = false, message = "Credenciales inválidas" });
 
-            return Ok(new { message = "Inicio de sesión exitoso" });
+            return Ok(new { success = true, message = "Inicio de sesión exitoso" });
         }
     }
 }
