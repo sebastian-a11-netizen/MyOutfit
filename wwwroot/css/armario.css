@@ -4,23 +4,73 @@ body {
     font-family: 'Quicksand', sans-serif;
     color: #333;
     line-height: 1.6;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/armario.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-button {
-    font-family: inherit;
+main {
+    flex: 1;
+    padding: 95px 20px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.outfits-section {
-    padding: 95px 20px 35px; 
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+.add-container {
+    margin: 0 auto 30px auto;
+    width: 100%;
+    max-width: 800px;     
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;   
+}
+
+#inputNombre {
+    flex: 3;
+    min-width: 0;
+    height: 46px;
+    padding: 6px 14px; 
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-sizing: border-box;
 }
 
 .add-btn {
-    grid-column: 1 / -1;
+    flex: 1;
+    height: 46px;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #8E2624;
+    transform: translateY(-1px);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    align-self: flex-start;
 }
 
 .outfit-card {
@@ -30,7 +80,7 @@ button {
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 350px; 
+    width: 350px;
 }
 
 .outfit-card:hover {
@@ -40,46 +90,56 @@ button {
 
 .outfit-card img {
     width: 100%;
-    height: 300px; 
+    height: 300px;
     object-fit: cover;
     display: block;
 }
 
 .outfit-details {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 .outfit-details h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #2f2f2f;
 }
 
-.favorite-icon {
+/* ── Icono de eliminar ── */
+.delete-icon {
     position: absolute;
     top: 15px;
     right: 15px;
-
     background: rgba(255, 255, 255, 0.9);
     width: 40px;
     height: 40px;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 20px;
     cursor: pointer;
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.favorite-icon:hover {
+.delete-icon:hover {
     transform: scale(1.1);
     background: white;
 }
 
+/* ── Botón de outfit hover ── */
 .btn-outfit:hover {
     background-color: #8c583c;
 }
 
+/* ── Responsive para móviles ── */
+@media (max-width: 600px) {
+    .add-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #inputNombre, .add-btn {
+        width: 100%;
+        flex: none;
+    }
+}

@@ -2,38 +2,55 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
   <title>Armario</title>
+
   <link rel="stylesheet" href="/css/style.css"> 
   <link rel="stylesheet" href="/css/armario.css"> 
 </head>
+
 <body>
-    <header>
-        <div class="logo">MyOutfit</div>
-         <nav class="main-nav">
-            <a href="/html/index.html">Inicio</a>
-            <a href="/html/chat.html">Chat</a>
-            <a href="/html/armario.html" class="active">Armario</a>
-        </nav>
-        <div>
-            <a href="/html/login.html"><img src="/img/login.png" alt="Iniciar Sesión" height="33" /></a>
-        </div>
-    </header>
+  <header>
+    <div class="logo">MyOutfit</div>
 
-  <main class="outfits-section">
-    <button class="btn btn-secondary add-btn">Agregar prenda</button>
-  <div class="outfit-card">
-    <div class="favorite-icon">🖤</div>
-    <img src="/img/blackshirt.jpg" alt="Camisa Negra">
-    <div class="outfit-details">
-        <h3>Camisa Negra</h3>
+    <nav class="main-nav">
+      <a href="/html/index.html">Inicio</a>
+      <a href="/html/chat.html">Chat</a>
+      <a href="/html/armario.html" class="active">Armario</a>
+    </nav>
+
+    <div>
+      <a href="/html/login.html">
+        <img src="/img/login.png" alt="Iniciar Sesión" height="33" />
+      </a>
     </div>
-  </div>
-</main>
+  </header>
+  <main class="outfits-section">
 
+    <section class="add-container">
+      <input 
+        type="text" 
+        id="inputNombre" 
+        placeholder="Nombre de la nueva prenda"
+        aria-label="Nombre de la prenda"
+      >
 
-   <footer>
-        <p>@QueMePongoOficial</p>
-    </footer>
+      <button 
+        class="btn btn-secondary add-btn" 
+        id="btnAgregar"
+      >
+        Subir foto
+      </button>
+    </section>
+    <input type="file" id="fileInput" accept="image/*" hidden>
+  </main>
+
+  <footer>
+    <p>@QueMePongoOficial</p>
+  </footer>
+
+  <script src="/js/armario.js"></script>
 
 </body>
 </html>
