@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Domain;
+using Application.DTOs;
 
 namespace Controllers
 {
@@ -7,31 +8,31 @@ namespace Controllers
     [Route("api/[controller]")]
     public class ClothingController : ControllerBase
     {
-        private readonly IClothingService clothingService;
+        private readonly IClothingService service;
 
-        public ClothingController(IClothingService clothingService)
+        public ClothingController(IClothingService service)
         {
-            this.clothingService = clothingService;
+            this.service = service;
         }
 
         [HttpPost("add")]
-        public async Task<IActionResult> AgregarPrenda([FromForm] IFormFile imagen, [FromForm] string nombre)
+        public async Task<IActionResult> AgregarPrenda([FromForm] CrearPrendaRequest request)
         {
-            var resultado = await clothingService.AgregarPrenda(imagen, nombre);
+            var resultado = await service.AgregarPrenda(request);
             return Ok(resultado);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> EliminarPrenda(int id)
         {
-            await clothingService.EliminarPrenda(id);
+            await service.EliminarPrenda(id);
             return Ok(new { success = true });
         }
 
         [HttpGet]
         public async Task<IActionResult> ObtenerPrendas()
         {
-            var prendas = await clothingService.ObtenerPrendas(1); 
+            var prendas = await service.ObtenerPrendas(1); 
             return Ok(prendas);
         }
     }

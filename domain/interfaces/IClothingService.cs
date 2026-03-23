@@ -1,8 +1,10 @@
+using Application.DTOs;
+
 namespace Domain
 {
     public interface IClothingService
     {
-        Task<object> AgregarPrenda(IFormFile imagen, string nombre);
+        Task<PrendaResponse> AgregarPrenda(CrearPrendaRequest request);
         Task EliminarPrenda(int id);
         Task<IEnumerable<Clothing>> ObtenerPrendas(int userId);
     }

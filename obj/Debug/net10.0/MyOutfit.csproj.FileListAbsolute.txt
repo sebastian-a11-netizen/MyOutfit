@@ -62,7 +62,6 @@
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/MyOutfit.csproj.AssemblyReference.cache
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/MyOutfit.csproj.Up2Date
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/ccq037tq5v-{0}-co6uy5grbe-co6uy5grbe.gz
-/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/hrzr722osg-{0}-bt4g9j9e35-bt4g9j9e35.gz
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/7582gvyamk-{0}-5m7fd9gh0h-5m7fd9gh0h.gz
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/rhgajzc9z1-{0}-25hv3wqma8-25hv3wqma8.gz
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/z4uyu5571e-{0}-cosiwg0irh-cosiwg0irh.gz
@@ -71,6 +70,7 @@
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/poipg7sm5x-{0}-j2je6onulw-j2je6onulw.gz
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/7lqd4bbhj8-{0}-wo5iakyor0-wo5iakyor0.gz
 /home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/zp0o79mcab-{0}-o9j5gsxe5r-o9j5gsxe5r.gz
-/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/sfyhlzbv4f-{0}-djsmbrk41o-djsmbrk41o.gz
-/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/8wfmkop9ct-{0}-2ihfpqor0x-2ihfpqor0x.gz
-/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/aaw2vlh05d-{0}-fbt029chrb-fbt029chrb.gz
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/8wfmkop9ct-{0}-5t6ma0hdx6-5t6ma0hdx6.gz
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/aaw2vlh05d-{0}-588wca12zl-588wca12zl.gz
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/hrzr722osg-{0}-ebjf4xnjfv-ebjf4xnjfv.gz
+/home/sebastian/Projects/MyOutfit/obj/Debug/net10.0/compressed/sfyhlzbv4f-{0}-f6cirqnwo2-f6cirqnwo2.gz
