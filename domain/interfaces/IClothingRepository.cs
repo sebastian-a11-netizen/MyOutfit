@@ -1,8 +1,11 @@
-using Domain;
+using Domain.Entities;
 
-public interface IClothingRepository
+namespace Domain.Interfaces
 {
+    public interface IClothingRepository
+    {
     Task<int> AgregarPrenda(Clothing clothing);
     Task EliminarPrenda(int id);
     Task<IEnumerable<Clothing>> ObtenerPrendasPorUsuario(int userId);
+    }
 }

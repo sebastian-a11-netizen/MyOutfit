@@ -1,4 +1,5 @@
-using Domain;
+using Domain.Interfaces;
+using Domain.Entities;
 using Application.DTOs;
 
 namespace Application.Services

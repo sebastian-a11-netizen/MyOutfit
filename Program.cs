@@ -1,5 +1,5 @@
-using Infraestructure;
-using Domain;
+using Infraestructure.Repositories;
+using Domain.Interfaces;
 using Application.Services;
 using Infraestructure.Services;
 

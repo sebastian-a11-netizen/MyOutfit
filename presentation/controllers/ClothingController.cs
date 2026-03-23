@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Domain;
 using Application.DTOs;
+using Domain.Interfaces;
 
-namespace Controllers
+namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

@@ -1,11 +1,12 @@
 using System.Data;
 using Dapper;
 using Microsoft.Data.Sqlite;
-using Domain;
+using Domain.Interfaces;
+using Domain.Entities;
 using SqlKata.Compilers;
 using SqlKata;
 
-namespace Infraestructure
+namespace Infraestructure.Repositories
 {
     public class ClothingRepository : IClothingRepository
     {

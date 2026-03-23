@@ -1,6 +1,7 @@
 using Application.DTOs;
+using Domain.Entities;
 
-namespace Domain
+namespace Domain.Interfaces
 {
     public interface IClothingService
     {

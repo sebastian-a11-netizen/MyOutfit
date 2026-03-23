@@ -1,7 +1,10 @@
-using Domain;
+using Domain.Entities;
 
-public interface IUserRepository
+namespace Domain.Interfaces
 {
+    public interface IUserRepository
+    {
     Task<User?> ObtenerUsuarioPorEmail(string email);
     Task CrearUsuario(User user);
+    }
 }
